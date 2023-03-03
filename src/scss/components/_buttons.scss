@@ -1,3 +1,5 @@
+@use '../utilities/responsive';
+
 @mixin default(
     $background: transparent, 
     $color: var(--color-dark), 
@@ -8,7 +10,7 @@
     background-color: $background;
     color: $color;
     padding: 1rem;
-    border: 1px solid $border-color;
+    border: 3px solid $border-color;
     border-radius: 100%;
     display: inline-block;
     text-decoration: none;
@@ -16,12 +18,21 @@
 
     svg {
         display: block;
+
+        @include responsive.max(500px) {    
+            width: 15px;
+            height: 15px;
+        }
     }
 
 
     &:hover {
         background-color: $hover-background;
         color: $hover-color;
-        border: 1px solid var(--color-accent);
+        border: 3px solid var(--color-accent);
+    }
+
+    @include responsive.max(500px) {    
+        padding: 0.6rem;
     }
 }
