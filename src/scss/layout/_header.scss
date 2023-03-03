@@ -1,0 +1,52 @@
+@use '../utilities/responsive';
+
+.site-header {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;        
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 4rem;
+    z-index: 999;
+
+    @include responsive.max(880px) {
+        display: flex;
+    }
+    @include responsive.max(500px) {
+        padding: 3.5rem;
+    }
+
+    &--scroll {
+        padding: 1.5rem 2rem;
+        background-color: rgba(23, 23, 23, 0.9);
+        
+        @include responsive.max(500px) {
+            padding: 1.5rem;
+        }
+
+        .site-header__logo{
+                visibility: visible;
+        }
+    }
+
+    &__button {
+        color: var(--color-light);
+        font-family: var(--font-sans);
+        font-size: var(--font-size-1);
+        font-weight: 700;
+        padding: 0.5rem 1rem;
+        background-color: var(--color-accent);
+        border: none;
+
+        &:hover {
+            font-weight: 900;
+        }
+    }
+
+    &__logo {
+        visibility: hidden;
+        width: 80px;
+    }
+}
