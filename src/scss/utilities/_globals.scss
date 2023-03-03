@@ -10,25 +10,24 @@
 
     --border-radius: 0px;
 
-    --color-dark: hsl(0, 0%, 9%);
-    --color-dark-200: hsl(0, 0%, 19%);
-    --color-dark-300: hsl(0, 0%, 29%);
-    --color-dark-400: hsl(0, 0%, 39%);
-    --color-dark-500: hsl(0, 0%, 49%);
+    --color-dark: rgb(23, 23, 23);
+    --color-dark-200: rgb(48, 48, 48);
+    --color-dark-300: rgb(74, 74, 74);
+    --color-dark-400: #636363;
+    --color-dark-500: #7d7d7d;
     --color-dark-600: hsl(0, 0%, 59%);
     --color-dark-700: hsl(0, 0%, 69%);
     --color-dark-800: hsl(0, 0%, 79%);
     --color-dark-900: hsl(0, 0%, 89%);
 
-    --color-accent: hsl(322, 100%, 85%);
-    --color-accent-200: hsl(322, 100%, 86%);
-    --color-accent-300: hsl(322, 100%, 87%);
-    --color-accent-400: hsl(322, 100%, 88%);
-    --color-accent-500: hsl(322, 100%, 89%);
-    --color-accent-600: hsl(322, 100%, 90%);
-    --color-accent-700: hsl(322, 100%, 94%);
-    --color-accent-800: hsl(322, 100%, 96%);
-    --color-accent-900: hsl(322, 100%, 98%);
+    --color-accent: #f8cb72;
+    --color-accent-200: hsl(40, 90%, 74%);
+    --color-accent-300: hsl(40, 90%, 78%);
+    --color-accent-400: hsl(40, 90%, 82%);
+    --color-accent-500: hsl(40, 90%, 86%);
+    --color-accent-700: hsl(40, 90%, 90%);
+    --color-accent-800: hsl(40, 90%, 92%);
+    --color-accent-900: hsl(40, 90%, 94%);
 
     --color-light: #f1f1f1;
     --color-light-200: hsl(0, 0%, 85%);
