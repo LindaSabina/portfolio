@@ -132,13 +132,14 @@
                 padding: 1rem;
             }
 
-            
-            .overlay-title {
+
+            p {
                 color: var(--color-light);
                 font-family: var(--font-sans);
                 font-size: var(--font-size-7);
                 font-weight: 700;
                 line-height: 1.2;
+                
                 &:hover {
                     font-weight: 900;
                 }

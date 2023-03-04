@@ -19,7 +19,7 @@
 
     &--scroll {
         // padding: 0 2rem;
-        background-color: rgba(23, 23, 23, 0.9);
+        background-color: rgba(23, 23, 23);
         height: 80px;
         
         @include responsive.max(500px) {
