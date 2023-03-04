@@ -137,8 +137,11 @@
                 color: var(--color-light);
                 font-family: var(--font-sans);
                 font-size: var(--font-size-7);
-                font-weight: 900;
+                font-weight: 700;
                 line-height: 1.2;
+                &:hover {
+                    font-weight: 900;
+                }
 
                 @include responsive.max(570px) {
                     font-size: var(--font-size-6);

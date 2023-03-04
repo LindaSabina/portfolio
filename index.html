@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="src/js/header.js" defer></script>
     <script src="src/js/add-home-link.js" defer></script>
+    <script src="src/js/menu.js" defer></script>
 </head>
 <body>
 
@@ -16,13 +17,45 @@
 
     <!-- HERO -->
 
+    <div class="site-menu">
+            <ul>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#about">ABOUT</a> </li>
+                <li class="site-menu__link"><a href="#contact">CONTACT</a> </li>
+            </ul>
+    
+            <div class="site-menu__socials">
+                <a href="" class="site-menu__social">
+                    <svg id="dribbble-brands" xmlns="http://www.w3.org/2000/svg" width="42.6" height="42.6" viewBox="0 0 42.6 42.6">
+                        <path class="site-menu__social--hover" id="dribbble-brands-2" data-name="dribbble-brands" d="M29.3,8A21.3,21.3,0,1,0,50.6,29.3,21.329,21.329,0,0,0,29.3,8Zm14.008,9.825a18.06,18.06,0,0,1,4.108,11.26A42.523,42.523,0,0,0,34.748,28.5c-.494-1.206-.96-2.267-1.6-3.574,6.727-2.747,9.774-6.655,10.16-7.173Zm-1.95-2.107c-.327.466-3.066,4.147-9.533,6.572a96.564,96.564,0,0,0-6.789-10.65A18.208,18.208,0,0,1,41.364,15.72Zm-19.8-2.856a116.2,116.2,0,0,1,6.746,10.521A67.915,67.915,0,0,1,11.49,25.6,18.269,18.269,0,0,1,21.562,12.863ZM11.107,29.326c0-.186,0-.371.009-.556a67.106,67.106,0,0,0,18.7-2.589c.521,1.019,1.019,2.054,1.475,3.088-6.579,1.853-12.557,7.174-15.5,12.222A18.106,18.106,0,0,1,11.107,29.326Zm7.026,14.352c1.9-3.885,7.058-8.9,14.395-11.406a75.779,75.779,0,0,1,3.881,13.793,18.164,18.164,0,0,1-18.277-2.395Zm21.334.729a78.481,78.481,0,0,0-3.534-12.969,26.665,26.665,0,0,1,11.329.778,17.911,17.911,0,0,1-7.8,12.119Z" transform="translate(-8 -8)" fill="#171717"/>
+                    </svg>
+                </a>
+                <a href="" class="site-menu__social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22.81" height="42.596" viewBox="0 0 22.81 42.596">
+                        <path class="site-menu__social--hover" id="facebook-f-brands" d="M44.205,23.96l1.183-7.709h-7.4v-5c0-2.109,1.033-4.165,4.346-4.165H45.7V.521A40.965,40.965,0,0,0,39.738,0C33.646,0,29.663,3.692,29.663,10.374V16.25H22.89V23.96h6.771V42.6H38V23.96Z" transform="translate(-22.89)" fill="#171717"/>
+                    </svg>
+                </a>
+                <a href="" class="site-menu__social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42.596" height="34.517" viewBox="0 0 42.596 34.517">
+                        <path class="site-menu__social--hover" id="twitter-brands" d="M38.24,57.572c.027.378.027.757.027,1.136,0,11.538-8.785,24.84-24.84,24.84a24.645,24.645,0,0,1-13.4-3.919,18.06,18.06,0,0,0,2.108.108,17.5,17.5,0,0,0,10.84-3.729,8.745,8.745,0,0,1-8.162-6.054,11,11,0,0,0,1.649.135,9.229,9.229,0,0,0,2.3-.3,8.711,8.711,0,0,1-7-8.494V61.19A8.792,8.792,0,0,0,5.7,62.3,8.743,8.743,0,0,1,3,50.623a24.8,24.8,0,0,0,18,9.134,9.856,9.856,0,0,1-.216-2,8.736,8.736,0,0,1,15.1-5.97,17.181,17.181,0,0,0,5.54-2.108,8.709,8.709,0,0,1-3.838,4.811,17.513,17.513,0,0,0,5.027-1.351,18.75,18.75,0,0,1-4.378,4.513Z" transform="translate(-0.025 -49.031)" fill="#171717"/>
+                    </svg>
+                </a>
+                <a href="" class="site-menu__social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42.596" height="42.586" viewBox="0 0 42.596 42.586">
+                        <path class="site-menu__social--hover" id="instagram-brands" d="M21.228,42.2A10.919,10.919,0,1,0,32.146,53.118,10.9,10.9,0,0,0,21.228,42.2Zm0,18.017a7.1,7.1,0,1,1,7.1-7.1,7.111,7.111,0,0,1-7.1,7.1ZM35.14,41.753a2.547,2.547,0,1,1-2.547-2.547A2.541,2.541,0,0,1,35.14,41.753Zm7.232,2.585c-.162-3.411-.941-6.433-3.44-8.923s-5.512-3.269-8.923-3.44c-3.516-.2-14.054-.2-17.57,0-3.4.162-6.424.941-8.923,3.43S.246,40.917.075,44.328c-.2,3.516-.2,14.054,0,17.57.162,3.411.941,6.433,3.44,8.923s5.512,3.269,8.923,3.44c3.516.2,14.054.2,17.57,0,3.411-.162,6.433-.941,8.923-3.44S42.2,65.31,42.371,61.9C42.571,58.383,42.571,47.854,42.371,44.338ZM37.829,65.671a7.187,7.187,0,0,1-4.048,4.048c-2.8,1.112-9.455.855-12.553.855s-9.759.247-12.553-.855a7.187,7.187,0,0,1-4.048-4.048c-1.112-2.8-.855-9.455-.855-12.553s-.247-9.759.855-12.553a7.187,7.187,0,0,1,4.048-4.048c2.8-1.112,9.455-.855,12.553-.855s9.759-.247,12.553.855a7.187,7.187,0,0,1,4.048,4.048c1.112,2.8.855,9.455.855,12.553S38.941,62.877,37.829,65.671Z" transform="translate(0.075 -31.825)" fill="#171717"/>
+                    </svg>
+                </a>
+            </div>   
+    </div>
+
     <div class="hero">
 
         <header class="site-header">
             <a href="" class="site-header__logo">
                 <img src="assets/images/headerimage@2x.png" alt="">
             </a>
-            <button class="site-header__button">MENU</button>
+            <button id="btn" class="site-header__button">MENU</button>
+            
         </header>
 
         
@@ -108,15 +141,8 @@
                           <circle id="Ellipse_88" data-name="Ellipse 88" cx="5" cy="5" r="5" transform="translate(585 -7.714)" fill="#f8cb72"/>
                           <circle id="Ellipse_89" data-name="Ellipse 89" cx="5" cy="5" r="5" transform="translate(601 619.286)" fill="#f8cb72"/>
                         </g>
-                      </svg>
-                      
-                          
-                    <!-- <div class="scroll-container">
-                        <div class="scroll-text">WEB DESIGN & DEVELOPMENT<span>.</span></div>
-                        <div class="scroll-text-2">WEB DESIGN & DEVELOPMENT<span>.</span></div>
-                    </div> -->
+                    </svg>      
                 </div>
-
 
             </div>  
 
@@ -298,7 +324,7 @@
 
             </div>
 
-            <nav class="works__link">
+            <div class="works__link">
                 <a href="" class="works__link-text">SEE ALL MY WORK</a>
                 <button class="works__button--more">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -308,7 +334,8 @@
                         </g>
                     </svg>
                 </button>
-            </nav>
+            </div>
+
 
         </div>
     </section>
