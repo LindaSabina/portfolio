@@ -31,6 +31,9 @@
             opacity: 1;
         }
     }
+    &--no-scroll {
+        display: none;
+    }
 
     &__button {
         color: var(--color-light-600);
@@ -40,6 +43,7 @@
         padding: 0.5rem 1rem;
         background-color: transparent;
         border: none;
+        
 
         &:hover {
             color: var(--color-accent);
