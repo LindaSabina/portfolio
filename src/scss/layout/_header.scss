@@ -18,22 +18,16 @@
     }
 
     &--scroll {
-        // padding: 0 2rem;
+        
         background-color: rgba(23, 23, 23);
         height: 80px;
         
-        @include responsive.max(500px) {
-            // height: 70px;
-        }
-
         .site-header__logo{
             visibility: visible;
             opacity: 1;
         }
     }
-    &--no-scroll {
-        display: none;
-    }
+    
 
     &__button {
         color: var(--color-light-600);

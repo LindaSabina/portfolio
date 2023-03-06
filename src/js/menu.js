@@ -13,6 +13,8 @@ const menu = () => {
         } else {
             menuButton.innerText = "MENU"
         }
+
+        
     }   
 
     menuButton.addEventListener('click', toggleMenu);   
